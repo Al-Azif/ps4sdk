@@ -33,6 +33,7 @@ $(eval $(call generateModule, libSceIme, sceImeKeyboardOpen sceImeKeyboardClose 
 $(eval $(call generateModule, libSceCommonDialog, sceCommonDialogInitialize sceCommonDialogIsUsed))
 $(eval $(call generateModule, libSceErrorDialog, sceErrorDialogClose sceErrorDialogGetStatus sceErrorDialogInitialize sceErrorDialogOpen sceErrorDialogTerminate sceErrorDialogUpdateStatus))
 $(eval $(call generateModule, libSceWebBrowserDialog, sceWebBrowserDialogClose sceWebBrowserDialogGetResult sceWebBrowserDialogGetStatus sceWebBrowserDialogInitialize sceWebBrowserDialogOpen sceWebBrowserDialogOpenForPredeterminedContent sceWebBrowserDialogResetCookie sceWebBrowserDialogSetCookie sceWebBrowserDialogTerminate sceWebBrowserDialogUpdateStatus))
+$(eval $(call generateModule, libSceSaveData, sceSaveDataInitialize3 sceSaveDataTerminate sceSaveDataMount2 sceSaveDataTransferringMount sceSaveDataUmount sceSaveDataUmountWithBackup sceSaveDataGetMountInfo sceSaveDataDelete sceSaveDataDirNameSearch sceSaveDataSetParam sceSaveDataGetParam sceSaveDataSaveIcon sceSaveDataLoadIcon sceSaveDataSyncSaveDataMemory sceSaveDataSetupSaveDataMemory2 sceSaveDataGetSaveDataMemory2 sceSaveDataSetSaveDataMemory2 sceSaveDataRestoreBackupData sceSaveDataCheckBackupData sceSaveDataBackup sceSaveDataGetProgress sceSaveDataClearProgress sceSaveDataGetEventResult))
 
 # no need to touch, generates non-module libs
 $(eval $(call generateLibraryLarge, kern_function, libps4Kernel, none, $(kerns)))
