@@ -1,6 +1,8 @@
 ﻿#pragma once
 
-#include <types/savedata.h>
+#include <stddef.h>
+
+#include <sce/types/savedata.h>
 
 int32_t sceSaveDataInitialize3(const SceSaveDataInitParams3 *initParam);
 int32_t sceSaveDataTerminate();

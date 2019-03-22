@@ -1,7 +1,9 @@
-﻿#ifndef _SCE_SAVE_DATA_DEFS_H_
-#define _SCE_SAVE_DATA_DEFS_H_
+﻿#pragma once
 
-#include <types/userservice.h>
+#include <stddef.h>
+#include <stdint.h>
+
+#include <sce/types/userservice.h>
 
 /* Legacy */
 #define SCE_SAVE_DATA_MEMORY_MAXSIZE (1 * 1024 * 1024)
@@ -267,5 +269,3 @@ typedef struct SceSaveDataEvent {
   SceSaveDataDirName dirName;
   uint8_t reserved[40];
 } SceSaveDataEvent;
-
-#endif
