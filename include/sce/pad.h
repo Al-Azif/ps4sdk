@@ -11,3 +11,5 @@ int scePadClose(int handle);
 int scePadRead(int handle, ScePadData *data, int count);
 int scePadReadState(int handle, ScePadData *data);
 int scePadSetVibration(int32_t handle, const ScePadVibrationParam *pParam);
+int scePadSetLightBar(int32_t handle, const ScePadLightBarParam *pParam);
+int scePadResetLightBar(int32_t handle);

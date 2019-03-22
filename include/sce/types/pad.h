@@ -39,3 +39,12 @@ typedef struct ScePadVibrationParam {
   uint8_t largeMotor;
   uint8_t smallMotor;
 } ScePadVibrationParam;
+
+typedef struct ScePadColor{
+  uint8_t r;
+  uint8_t g;
+  uint8_t b;
+  uint8_t reserve[1];
+} ScePadColor;
+
+typedef ScePadColor ScePadLightBarParam;
